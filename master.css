@@ -1,0 +1,41 @@
+table {
+	font-family: verdana, sans-serif;
+	font-size: 0.8em;
+	color: #333;
+
+	border-style: solid;
+	border-color: #333;
+	margin: 0px;
+	border-collapse: collapse;
+	float: center;
+	width: 1100px;
+}
+
+td {
+	color: #333;
+
+	border-style: solid;
+	border-color: #fff;
+	margin: 0px;
+}
+
+th {
+	border-style: solid;
+	background-color: #ddd;
+	border-color: #ddd;
+	font-size: 1.2em;
+}
+
+.grey {
+	background-color: #eee;
+	border-color: #eee;
+}
+
+.years {
+	width: 100;
+	background-color: #eee
+}
+
+.header {
+	
+}

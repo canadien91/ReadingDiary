@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<Head>
+	<meta charset="utf-8">
+	<title>2011</title>
+	<link href="ball/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="fa/css/font-awesome.css" rel="stylesheet">
+</Head>
+
+<Body>
+	<i class="fa fa-spinner fa-spin fa-3x"></i> icon-camera-retro	
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<a class="brand" href="{% url 'main:index' %}">N.A.Y.</a>
+			<ul class="nav">
+				<li>
+					<a href="{% url 'main:index' %}">
+						<i class="fa fa-home"></i>
+						Main
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'blog:index' %}">
+						<i class="fa fa-cloud"></i>
+						Blog
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'main:contacts' %}">
+						<i class="fa fa-envelope"></i>
+						Contacts
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+	<div class="span1 pull-left">
+		<span class="label label-info">Today</span>
+		<p>
+			The {{ moment|date:"j"|ordinal }} {{ moment|date:"F Y"}}, {{ moment|date:"l" }}
+		</p>
+		<p class="text-info">
+			The {{ moment|date:"z"|ordinal }} day of the year.
+		</p>
+	</div>
+	<div class="span10">
+		{% block content %}{% endblock %}
+	</div>
+</div>
+	<script src="ball/js/jquery.js"></script>
+	<script src="ball/js/bootstrap.min.js"></script>
+</Body>
+
+</HTML>
