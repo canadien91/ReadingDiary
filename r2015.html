@@ -4,32 +4,44 @@
 <Head>
     <meta charset="utf-8">
     <title>2015</title>
-    <link href="ball/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="ball/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </Head>
 
 <Body>
-    
+    <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span2">
-                <!--Sidebar content-->
-                <ul class="nav nav-list">
-                    <li><a href="#">Full List</a></li>
-                    <li><a href="wishlist.html">Wish List</a></li>
-                    <li class="nav-header">By Year</li>
-                    <li><a href="r2011.html">2011</a></li>
-                    <li><a href="r2012.html">2012</a></li>
-                    <li><a href="r2013.html">2013</a></li>
-                    <li><a href="r2014.html">2014</a></li>
-                    <li class="active"><a href="r2015.html">2015</a></li>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Bookshelf</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="wlist.html">WishList</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    By Year <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">2011</a></li>
+                    <li><a href="#">2012</a></li>
+                    <li><a href="#">2013</a></li>
+                    <li><a href="#">2014</a></li>
+                    <li><a href="#">2015</a></li>
                 </ul>
-            </div>
-            <div class="span9">
+            </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="col-xs-10 col-xs-offset-1">
                 <!--Body content-->
                 <h3>What I've read in 2015</h3>
                 <table class="table table-hover table-condensed table-bordered">
                     <tr>
-                        <th width="60">#</th>
+                        <th width="65">#</th>
                         <th>Автор: "Название"</th>
                         <th>Тема</th>
                         <th>Направление</th>
@@ -220,10 +232,17 @@
                         <td>Роман</td>
                         <td>8 Августа</td>
                     </tr>
+                    <tr>
+                        <td>24 [225]</td>
+                        <td>Джоан Кэтлин Роулинг: "Гарри Поттер и Принц-полукровка"</td>
+                        <td>Приключения</td>
+                        <td>Фэнтези</td>
+                        <td>Роман</td>
+                        <td>16 Сентября</td>
+                    </tr>
                 </table>
             </div>
         </div>
-    </div>
     <script src="ball/js/jquery.js"></script>
     <script src="ball/js/bootstrap.min.js"></script>
 </Body>
